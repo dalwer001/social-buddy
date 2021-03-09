@@ -9,9 +9,15 @@ const Post = (props) => {
             history.push(url);
 
     }
-
+const divStyle={
+    backgroundColor:'goldenrod',
+    border:'2px solid red',
+    borderRadius:'10px',
+    margin:'10px',
+    padding:'10px'
+}
     return (
-        <div>
+        <div style={divStyle}>
             <h1><strong>{id}.</strong>{title}</h1>
             <p>{body}</p>
             <button onClick={()=>showComments(id)}>Show comment</button>
